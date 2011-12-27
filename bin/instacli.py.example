@@ -1,0 +1,34 @@
+# Sample instacli.py
+#
+# This is a sample instacli.py file. Usually sensitive information
+# lives here (things like authentication tokens, email addresses, and so on), so this
+# file is ignored in this project's .gitignore.
+#
+# To set this up, rename this file to `instacli.py` and the 'insta'
+# alias will function correctly. Also change the variables to match your
+# Instapaper credentials.
+
+###
+#
+# InstaCLI
+# Quick and dirty Instapaper CLI client written in Python.
+#
+###
+
+import urllib
+
+# VARIABLES
+username = "YOUR_USER_NAME"
+password = "YOUR_PASSWORD"
+
+# Prompt user for URL, put result in urlstring variable.
+urlstring = raw_input("URL: ")
+
+# Put it all together into a URL to pass to Instapaper API.
+urldata = "username=%s&password=%s&url=%s" % (username,password,urlstring)
+
+# Post data to Instapaper API.
+f = urllib.urlopen("https://www.instapaper.com/api/add?", urldata)
+s = f.read()
+f.close()
+print s

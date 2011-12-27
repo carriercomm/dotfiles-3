@@ -1,0 +1,5 @@
+# Path to your dotfiles
+ZSH=$HOME/.dotfiles
+
+# Source every .zsh file
+for config_file ($ZSH/**/*.zsh) source $config_file
