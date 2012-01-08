@@ -27,6 +27,9 @@ colorscheme solarized
 " Enable mouse
 set mouse=a
 
+" Use :w!! to write file as sudo
+cmap w!! %!sudo tee > /dev/null %
+
 " use comma as <Leader> key instead of backslash
 let mapleader=","
 
