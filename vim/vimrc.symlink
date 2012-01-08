@@ -45,3 +45,10 @@ nnoremap <leader>n :NERDTree<cr>
 " shortcut to Gundo
 nnoremap <c-a> :GundoToggle
 
+" Python specific options
+au FileType py set autoindent
+au FileType py set smartindent
+au FileType py set textwidth=79 " PEP-8 Friendly
+
+" where to find Pydiction
+let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'

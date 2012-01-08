@@ -43,5 +43,9 @@ defaults write com.apple.iTunes disablePing -bool true
 # Disable Resume system-wide
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
+# Disable Spotlight indexing
+sudo mdutil -a -i off
+echo "Disabling Spotlight indexing .."
+
 # Kill affected applications
 killall Dock, killall Finder
