@@ -1,4 +1,5 @@
 # Stolen from http://rdegges.com/tools-i-use-tmux
+# Set keybindings to emulate GNU screen
 set -g prefix C-a
 unbind %
 bind \ split-window -h
