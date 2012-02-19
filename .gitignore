@@ -1,6 +1,7 @@
 git/gitconfig.symlink
 bin/instacli.py
 vim/vim.symlink/bundle/*
+vim/Pydiction
 .DS_Store
 .tmp
 .swp
