@@ -29,6 +29,12 @@ runBackup()
   rsync -avP --delete ~/Library/Mail $rsyncHost
   rsync -avP --delete ~/Library/Preferences $rsyncHost
 
+  # Little Snitch.
+  # Requires sudo.
+  # NOTE: DISABLED for now.
+  #sudo rsync -avP --delete /Library/Little\ Snitch $rsyncHost
+  #sudo rsync -avP --delete /Library/Application\ Support/Objective\ Development $rsyncHost
+
   # Save a copy of /Applications directory listing and rsync that too.
   ls /Applications >> ~/appsinstalled.txt; rsync -avP ~/appsinstalled.txt $rsyncHost; rm -f ~/appsinstalled.txt
 
