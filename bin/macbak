@@ -19,6 +19,12 @@ runBackup()
   # App Support folder but exclude the iOS device backups.
   rsync -avP --delete --exclude MobileSync/ ~/Library/Application\ Support $rsyncHost
 
+  # Home folder
+  # NOTE: DISABLED for now.
+  # NOTE: also -n is dry run, command won't run without excluding this option.
+  #rsync -avPn --exclude Library/ --exclude Dropbox/ --exclude Documents/ --exclude Downloads/ --exclude "VirtualBox VMs/" --exclude Pictures/ --exclude Music/ --exclude Movies/ --exclude repos/ ~/ jl@dude:/mnt/files/Mac/homefolder/
+  #rsync -avP --delete --exclude Library/Caches/ --exclude "Library/Application Support/MobileSync/" --exclude Dropbox/ --exclude "VirtualBox VMs/" --exclude Pictures/ --exclude Music/ --exclude Movies/ ~/ jl@dude:/mnt/files/Mac/homefolder/
+
   # Documents and Downloads folders.
   rsync -avP --delete ~/Documents $rsyncHost
   rsync -avP --delete ~/Downloads $rsyncHost

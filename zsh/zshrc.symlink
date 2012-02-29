@@ -6,3 +6,5 @@ for config_file ($ZSH/**/*.zsh) source $config_file
 
 # Set TERM so that colours are correctly shown in vim
 TERM=screen-256color
+
+autoload -U compinit; compinit
