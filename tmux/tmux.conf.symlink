@@ -20,3 +20,7 @@ bind right resize-pane -R 10
 set -g default-terminal "screen-256color"
 set -g status-bg colour235
 set -g status-fg colour244
+
+# Notify if other windows have activity
+setw -g monitor-activity on
+set -g visual-activity on
