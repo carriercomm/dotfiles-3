@@ -1,0 +1,54 @@
+#!/usr/bin/python
+
+# Sample nzbcli.py
+#
+# This is a sample nzbcli.py file. Usually sensitive information
+# lives here (things like authentication tokens, email addresses, and so on), so this
+# file is ignored in this project's .gitignore.
+#
+# To set this up, rename this file to `nzbcli.py` and the 'nzb'
+# alias will function correctly. Also change the variables to match your
+# SABnzbd credentials.
+
+###
+#
+# SABnzbd CLI client.
+# Takes pause or resume as arguments to pause/resume SABnzbd queue.
+#
+# By Josh Lapham [josh@joshlapham.com]
+#
+###
+
+import sys
+import urllib
+
+# VARIABLES
+# CHANGE THESE TO MATCH YOUR VALUES.
+# SABnzbd API key (found in SABnzbd settings).
+APIkey = "YOUR_API_KEY_HERE"
+# Host and port to connect to.
+hostAndPort = "localhost:8082"
+
+# FUNCTIONS
+# Post to SABnzbd API.
+def postToAPI():
+    # Post data to SABnzbd API.
+    f = urllib.urlopen("http://%s/api?%s&apikey=%s" % (hostAndPort,urldata,APIkey))
+    s = f.read()
+    f.close()
+    print s
+    return
+
+# Check arguments for pause or resume and act accordingly. Fail if no argument given.
+if len(sys.argv) == 1:
+    sys.exit("Usage: pause, resume, queue")
+elif len(sys.argv) >= 1:
+    if sys.argv[1]=='resume':
+        urldata = "mode=resume"
+        postToAPI()
+    elif sys.argv[1]=='pause':
+        urldata = "mode=pause"
+        postToAPI()
+    elif sys.argv[1]=='queue':
+        urldata = "mode=queue&start=START&limit=LIMIT&output=xml"
+        postToAPI()

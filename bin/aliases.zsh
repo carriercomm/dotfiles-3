@@ -3,3 +3,6 @@ alias insta='python ~/.dotfiles/bin/instacli.py'
 
 # Funkiller - disable time-wasting websites
 alias funkiller='sudo bash ~/.dotfiles/bin/funkiller'
+
+# nzbcli - CLI pause/resume for SABnzbd
+alias nzb='python ~/.dotfiles/bin/nzbcli.py'

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Sample instacli.py
 #
 # This is a sample instacli.py file. Usually sensitive information
@@ -11,7 +13,9 @@
 ###
 #
 # InstaCLI
-# Quick and dirty Instapaper CLI client written in Python.
+# Takes a URL as an argument and saves to Instapaper.
+#
+# By Josh Lapham [josh@joshlapham.com]
 #
 ###
 
