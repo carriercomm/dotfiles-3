@@ -8,7 +8,7 @@ alias ...='cd ../..'
 alias -- -='cd -'
 
 # List directory contents
-alias lsa='ls -lah'
-alias l='ls -lahG'
-alias ll='ls -l'
-alias lsd='ls -alrth'
+alias lsa='ls -lah --color'
+alias l='ls -lahG --color'
+alias ll='ls -l --color'
+alias lsd='ls -alrth --color'
