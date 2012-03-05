@@ -3,9 +3,3 @@ ZSH=$HOME/.dotfiles
 
 # Source every .zsh file
 for config_file ($ZSH/**/*.zsh) source $config_file
-
-# Set TERM so that colours are correctly shown in vim
-TERM=screen-256color
-
-# Init autocomplete
-autoload -U compinit; compinit

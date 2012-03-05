@@ -1,22 +1,35 @@
 # Location of history file
 HISTFILE=$HOME/.zsh_history
-# size of history file
-HISTSIZE=10000
-# how much history to save
-SAVEHIST=10000
-# history commands are appended to history file
+
+# Size of history file
+HISTSIZE=50000
+
+# How much history to save
+SAVEHIST=50000
+
+# History commands are appended to history file
 setopt APPEND_HISTORY
-# show possible matches if completion can't decide
+
+# Show possible matches if completion can't decide
 setopt auto_list
-# puts more info in history file
+
+# Puts more info in history file
 setopt EXTENDED_HISTORY
-# sequential duplicate commands only listed once in history
+
+# Sequential duplicate commands only listed once in history
 setopt HIST_IGNORE_DUPS
-# do completion on <value> in foo=<value>
+
+# Do completion on <value> in foo=<value>
 setopt magic_equal_subst
-# save history on all shells
+
+# Save history on all shells
 setopt SHARE_HISTORY
-# misc
+
+# Search history
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
+# Misc
 setopt HIST_VERIFY 
 setopt INC_APPEND_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
