@@ -15,7 +15,11 @@
 # SABnzbd CLI client.
 # Takes pause or resume as arguments to pause/resume SABnzbd queue.
 #
+# http://github.com/joshlapham/nzbcli
+#
 # By Josh Lapham [josh@joshlapham.com]
+#
+# License: Beerware
 #
 ###
 

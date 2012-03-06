@@ -15,7 +15,11 @@
 # InstaCLI
 # Takes a URL as an argument and saves to Instapaper.
 #
+# http://github.com/joshlapham/instacli
+#
 # By Josh Lapham [josh@joshlapham.com]
+#
+# License: Beerware
 #
 ###
 
