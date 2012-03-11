@@ -20,6 +20,7 @@
 # * vim-colors-solarized
 # * pyflakes
 # * Pydiction
+# * syntastic
 #
 ###
 
@@ -33,6 +34,7 @@ git clone git://github.com/vim-scripts/taglist.vim.git vim.symlink/bundle/taglis
 git clone git://github.com/vim-scripts/VOoM.git vim.symlink/bundle/voom
 git clone git://github.com/altercation/vim-colors-solarized.git vim.symlink/bundle/vim-colors-solarized
 git clone git://github.com/kevinw/pyflakes-vim.git vim.symlink/bundle/pyflakes
-git clone git://github.com/vim-scripts/Pydiction.git Pydiction
+git clone git://github.com/vim-scripts/Pydiction.git vim.symlink/bundle/Pydiction
+git clone git://github.com/scrooloose/syntastic.git vim.symlink/bundle/syntastic
 
 echo "Plugin clone complete."
