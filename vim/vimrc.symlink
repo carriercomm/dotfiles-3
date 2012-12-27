@@ -8,7 +8,7 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 
 "" Whitespace
-set nowrap                      " don't wrap lines
+"set nowrap                      " don't wrap lines
 set tabstop=4 
 set shiftwidth=4                " a tab is four spaces
 set expandtab                   " use spaces, not tabs
@@ -33,6 +33,13 @@ cmap w!! %!sudo tee > /dev/null %
 
 " use comma as <Leader> key instead of backslash
 let mapleader=","
+
+" Disable up/down/left/right arrow keys
+" to force use of hjkl keys. Learn monkey!
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j

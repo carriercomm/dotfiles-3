@@ -15,10 +15,10 @@ alias ...='cd ../..'
 alias -- -='cd -'
 
 # List directory contents
-alias lsa='ls -lah'
-alias l='ls -lahG'
-alias ll='ls -l'
-alias lsd='ls -alrth'
+alias lsa='ls -lah --color=auto'
+alias l='ls -lahG --color=auto'
+alias ll='ls -l --color=auto'
+alias lsd='ls -alrth --color=auto'
 
 # Shortcut to clear
 alias c='clear'

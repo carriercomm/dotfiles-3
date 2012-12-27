@@ -2,6 +2,7 @@ git/gitconfig.symlink
 bin/instacli.py
 bin/nzbcli.py
 vim/vim.symlink/bundle/*
+local
 .DS_Store
 .tmp
 .swp
