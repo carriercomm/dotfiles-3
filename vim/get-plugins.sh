@@ -33,8 +33,8 @@ git clone git://github.com/ervandew/supertab.git vim.symlink/bundle/supertab
 git clone git://github.com/vim-scripts/taglist.vim.git vim.symlink/bundle/taglist
 git clone git://github.com/vim-scripts/VOoM.git vim.symlink/bundle/voom
 git clone git://github.com/altercation/vim-colors-solarized.git vim.symlink/bundle/vim-colors-solarized
-git clone git://github.com/kevinw/pyflakes-vim.git vim.symlink/bundle/pyflakes
-git clone git://github.com/vim-scripts/Pydiction.git vim.symlink/bundle/Pydiction
+#git clone git://github.com/kevinw/pyflakes-vim.git vim.symlink/bundle/pyflakes
+#git clone git://github.com/vim-scripts/Pydiction.git vim.symlink/bundle/Pydiction
 git clone git://github.com/scrooloose/syntastic.git vim.symlink/bundle/syntastic
 
 echo "Plugin clone complete."

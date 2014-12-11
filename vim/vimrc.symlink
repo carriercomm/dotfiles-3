@@ -62,7 +62,7 @@ au FileType py set smartindent
 au FileType py set textwidth=79 " PEP-8 Friendly
 
 " where to find Pydiction
-let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
+"let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 
 " fancy statusline
 set statusline=%F%m%r%h%w
