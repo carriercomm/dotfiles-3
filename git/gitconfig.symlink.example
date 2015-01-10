@@ -45,6 +45,8 @@
   insteadOf = "gist:"
 [user]
         name = Josh Lapham
-        email = user@example.com
+        email = josh@joshlapham.com
 [github]
         user = joshlapham
+[alias]
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
